@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct CartItem {
+    var quantity = 0
+    var item: MenuItem.Item
+    mutating func addToQuantity() {
+        quantity += 1
+    }
+    mutating func substractFromQuantity() {
+        quantity -= 1
+    }
+}

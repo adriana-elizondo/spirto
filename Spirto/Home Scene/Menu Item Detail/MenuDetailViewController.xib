@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuDetailViewController" customModule="Spirto" customModuleProvider="target">
+            <connections>
+                <outlet property="itemDescription" destination="mFc-RD-EUP" id="FtZ-lP-5S4"/>
+                <outlet property="itemImage" destination="8hS-jp-FMc" id="B84-gh-3Zy"/>
+                <outlet property="itemTitle" destination="bvG-Uk-zZe" id="H9T-h9-SUl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="8uI-Uf-Pre"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8hS-jp-FMc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="TFu-ih-QEI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvG-Uk-zZe">
+                    <rect key="frame" x="15" y="215" width="384" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFc-RD-EUP">
+                    <rect key="frame" x="15" y="251" width="384" height="18.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mFc-RD-EUP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="18s-Jw-U4e"/>
+                <constraint firstItem="bvG-Uk-zZe" firstAttribute="top" secondItem="8hS-jp-FMc" secondAttribute="bottom" constant="15" id="3Wy-fR-rzw"/>
+                <constraint firstItem="bvG-Uk-zZe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="9uf-u1-j52"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mFc-RD-EUP" secondAttribute="trailing" constant="15" id="AD1-Ko-bZ1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bvG-Uk-zZe" secondAttribute="trailing" constant="15" id="AF7-pc-4Dj"/>
+                <constraint firstItem="8hS-jp-FMc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="K4d-YX-eMP"/>
+                <constraint firstItem="8hS-jp-FMc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="L6m-NW-5Tf"/>
+                <constraint firstItem="mFc-RD-EUP" firstAttribute="top" secondItem="bvG-Uk-zZe" secondAttribute="bottom" constant="15" id="c5l-ZV-bLe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8hS-jp-FMc" secondAttribute="trailing" id="uwB-Ak-dxG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="85"/>
+        </view>
+    </objects>
+</document>

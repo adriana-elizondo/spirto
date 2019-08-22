@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26225B0D230BCE83006ADB41 /* TopTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26225B0B230BCE83006ADB41 /* TopTabBarController.swift */; };
+		26225B0F230BCED0006ADB41 /* TabBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26225B0E230BCED0006ADB41 /* TabBarItem.xib */; };
+		26225B12230BD6E8006ADB41 /* STabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26225B11230BD6E8006ADB41 /* STabBarController.xib */; };
 		2640BBDC22E1C4DA00C9A801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BBDB22E1C4DA00C9A801 /* AppDelegate.swift */; };
 		2640BBDE22E1C4DA00C9A801 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BBDD22E1C4DA00C9A801 /* ViewController.swift */; };
 		2640BBE122E1C4DA00C9A801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2640BBDF22E1C4DA00C9A801 /* Main.storyboard */; };
@@ -14,6 +17,85 @@
 		2640BBE622E1C4DD00C9A801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2640BBE422E1C4DD00C9A801 /* LaunchScreen.storyboard */; };
 		2640BBF122E1C4DD00C9A801 /* SpirtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BBF022E1C4DD00C9A801 /* SpirtoTests.swift */; };
 		2640BBFC22E1C4DD00C9A801 /* SpirtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BBFB22E1C4DD00C9A801 /* SpirtoUITests.swift */; };
+		264FA4C3230A899C003554C4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA4C2230A899C003554C4 /* MapViewController.swift */; };
+		264FA4C5230A89A7003554C4 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264FA4C4230A89A7003554C4 /* MapViewController.xib */; };
+		264FA4C7230A89FE003554C4 /* AddressRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA4C6230A89FE003554C4 /* AddressRouter.swift */; };
+		2681F2EC2301371C0036E42A /* PlaceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2EB2301371C0036E42A /* PlaceOrderViewController.swift */; };
+		2681F2EF2301372A0036E42A /* PlaceOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2681F2EE2301372A0036E42A /* PlaceOrderViewController.xib */; };
+		2681F2F323013F1B0036E42A /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2F223013F1B0036E42A /* AddressViewController.swift */; };
+		2681F2F523013F2C0036E42A /* AddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2681F2F423013F2C0036E42A /* AddressViewController.xib */; };
+		2681F2F823013FCA0036E42A /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2F723013FCA0036E42A /* AddressTableViewCell.swift */; };
+		2681F2FA23013FD70036E42A /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2681F2F923013FD70036E42A /* AddressTableViewCell.xib */; };
+		2681F2FC230141390036E42A /* AddressModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2FB230141390036E42A /* AddressModels.swift */; };
+		2681F2FE230145870036E42A /* AddressInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2FD230145870036E42A /* AddressInteractor.swift */; };
+		2681F300230145930036E42A /* AddressPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2FF230145930036E42A /* AddressPresenter.swift */; };
+		2681F302230145C60036E42A /* AddressWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F301230145C60036E42A /* AddressWorker.swift */; };
+		2681F305230147BD0036E42A /* AddressesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F304230147BD0036E42A /* AddressesService.swift */; };
+		2692EBC322E95CF400192405 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692EBC222E95CF400192405 /* MenuItemTableViewCell.swift */; };
+		2692EBC522E95D0400192405 /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2692EBC422E95D0400192405 /* MenuItemTableViewCell.xib */; };
+		26B7E05822EEE656007DA653 /* CheckoutModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7E05722EEE656007DA653 /* CheckoutModels.swift */; };
+		26B7E05C22EEE75B007DA653 /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7E05B22EEE75B007DA653 /* CategoriesService.swift */; };
+		26BF52DE22EDF86100D6E575 /* STabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52DD22EDF86100D6E575 /* STabBarController.swift */; };
+		26BF52E122EDFAF600D6E575 /* CheckoutSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52E022EDFAF600D6E575 /* CheckoutSceneViewController.swift */; };
+		26BF52E322EDFB1A00D6E575 /* CheckoutSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BF52E222EDFB1A00D6E575 /* CheckoutSceneViewController.xib */; };
+		26BF52E522EDFC1500D6E575 /* CheckoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52E422EDFC1500D6E575 /* CheckoutHelper.swift */; };
+		26BF52E722EE9FA500D6E575 /* CheckoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52E622EE9FA500D6E575 /* CheckoutPresenter.swift */; };
+		26BF52E922EE9FB000D6E575 /* CheckoutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52E822EE9FB000D6E575 /* CheckoutInteractor.swift */; };
+		26BF52EB22EE9FC200D6E575 /* CheckoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52EA22EE9FC200D6E575 /* CheckoutRouter.swift */; };
+		26BF52ED22EE9FCD00D6E575 /* CheckoutWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52EC22EE9FCD00D6E575 /* CheckoutWorker.swift */; };
+		26BF52F022EEA0F500D6E575 /* CartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52EF22EEA0F500D6E575 /* CartItemTableViewCell.swift */; };
+		26BF52F222EEA10200D6E575 /* CartItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BF52F122EEA10200D6E575 /* CartItemTableViewCell.xib */; };
+		26BF52F522EEAA0800D6E575 /* HorizontalScrollingToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52F422EEAA0800D6E575 /* HorizontalScrollingToolbar.swift */; };
+		26BF52FA22EEB5C300D6E575 /* SToolbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF52F922EEB5C300D6E575 /* SToolbarCell.swift */; };
+		26C363F922F00F43006ED451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C363F822F00F43006ED451 /* LoginViewController.swift */; };
+		26C363FB22F01025006ED451 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C363FA22F01025006ED451 /* LoginViewController.xib */; };
+		26C363FD22F010EA006ED451 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C363FC22F010EA006ED451 /* LoginRouter.swift */; };
+		26C363FF22F010F8006ED451 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C363FE22F010F8006ED451 /* LoginInteractor.swift */; };
+		26C3640122F01101006ED451 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3640022F01101006ED451 /* LoginPresenter.swift */; };
+		26C3640322F0110D006ED451 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3640222F0110D006ED451 /* LoginWorker.swift */; };
+		26C3640722F011B1006ED451 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3640622F011B1006ED451 /* UIViewControllerExtensions.swift */; };
+		26C3640D22F18D55006ED451 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3640C22F18D55006ED451 /* ProfileViewController.swift */; };
+		26C3640F22F18D6C006ED451 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C3640E22F18D6C006ED451 /* ProfileViewController.xib */; };
+		26C3641122F18D7D006ED451 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3641022F18D7D006ED451 /* ProfileInteractor.swift */; };
+		26C3641322F18D87006ED451 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3641222F18D87006ED451 /* ProfilePresenter.swift */; };
+		26C3641522F18D95006ED451 /* ProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3641422F18D95006ED451 /* ProfileWorker.swift */; };
+		26C3642C22F6F213006ED451 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3641922F6F211006ED451 /* Montserrat-SemiBold.ttf */; };
+		26C3642D22F6F213006ED451 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3641A22F6F211006ED451 /* Montserrat-ExtraBoldItalic.ttf */; };
+		26C3642E22F6F213006ED451 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3641B22F6F211006ED451 /* Montserrat-SemiBoldItalic.ttf */; };
+		26C3642F22F6F213006ED451 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26C3641C22F6F211006ED451 /* OFL.txt */; };
+		26C3643022F6F213006ED451 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3641D22F6F212006ED451 /* Montserrat-Regular.ttf */; };
+		26C3643122F6F213006ED451 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3641E22F6F212006ED451 /* Montserrat-BoldItalic.ttf */; };
+		26C3643222F6F213006ED451 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3641F22F6F212006ED451 /* Montserrat-ExtraBold.ttf */; };
+		26C3643322F6F213006ED451 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642022F6F212006ED451 /* Montserrat-Bold.ttf */; };
+		26C3643422F6F213006ED451 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642122F6F212006ED451 /* Montserrat-MediumItalic.ttf */; };
+		26C3643522F6F213006ED451 /* Montserrat-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642222F6F212006ED451 /* Montserrat-RegularItalic.ttf */; };
+		26C3643622F6F213006ED451 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642322F6F212006ED451 /* Montserrat-Light.ttf */; };
+		26C3643722F6F213006ED451 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642422F6F212006ED451 /* Montserrat-Thin.ttf */; };
+		26C3643822F6F213006ED451 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642522F6F212006ED451 /* Montserrat-ExtraLightItalic.ttf */; };
+		26C3643922F6F213006ED451 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642622F6F213006ED451 /* Montserrat-ExtraLight.ttf */; };
+		26C3643A22F6F213006ED451 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642722F6F213006ED451 /* Montserrat-BlackItalic.ttf */; };
+		26C3643B22F6F213006ED451 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642822F6F213006ED451 /* Montserrat-Medium.ttf */; };
+		26C3643C22F6F213006ED451 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642922F6F213006ED451 /* Montserrat-LightItalic.ttf */; };
+		26C3643D22F6F213006ED451 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642A22F6F213006ED451 /* Montserrat-ThinItalic.ttf */; };
+		26C3643E22F6F213006ED451 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C3642B22F6F213006ED451 /* Montserrat-Black.ttf */; };
+		26C3644122F6F4B2006ED451 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3644022F6F4B2006ED451 /* CustomPresentationController.swift */; };
+		26C3644322F6F579006ED451 /* MenuDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C3644222F6F579006ED451 /* MenuDetailViewController.xib */; };
+		26C3644522F6F586006ED451 /* MenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3644422F6F586006ED451 /* MenuDetailViewController.swift */; };
+		26C3644722F6FFE7006ED451 /* CustomPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3644622F6FFE7006ED451 /* CustomPresentationAnimator.swift */; };
+		26C3644D22F71235006ED451 /* ProfileModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3644C22F71235006ED451 /* ProfileModels.swift */; };
+		26C377AF230A4D7F004097F3 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C377AE230A4D7F004097F3 /* UserManager.swift */; };
+		26CBBD8F22E6FBAB00CB27D1 /* MenuItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBD8E22E6FBAB00CB27D1 /* MenuItemsService.swift */; };
+		26CBBD9922E6FFAC00CB27D1 /* libNetworkLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CBBD9722E6FFA100CB27D1 /* libNetworkLayer.a */; };
+		26CBBD9B22E7085600CB27D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBD9A22E7085600CB27D1 /* Extensions.swift */; };
+		26CBBD9E22E7F57E00CB27D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBD9D22E7F57E00CB27D1 /* HomeViewController.swift */; };
+		26CBBDA022E7F58900CB27D1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBD9F22E7F58900CB27D1 /* HomeInteractor.swift */; };
+		26CBBDA222E7F59200CB27D1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBDA122E7F59200CB27D1 /* HomePresenter.swift */; };
+		26CBBDA722E7F5C000CB27D1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBDA622E7F5C000CB27D1 /* HomeRouter.swift */; };
+		26CBBDA922E7F5D000CB27D1 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBDA822E7F5D000CB27D1 /* HomeWorker.swift */; };
+		26CBBDAB22E7F5F700CB27D1 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBDAA22E7F5F700CB27D1 /* HomeModels.swift */; };
+		26CBBDAD22E7F71E00CB27D1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CBBDAC22E7F71E00CB27D1 /* HomeViewController.xib */; };
+		26CBBDB022E7F92100CB27D1 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBBDAF22E7F92100CB27D1 /* UIExtensions.swift */; };
+		26E2E310230AA1170035912F /* SToolbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E2E30F230AA1170035912F /* SToolbarCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +113,32 @@
 			remoteGlobalIDString = 2640BBD722E1C4DA00C9A801;
 			remoteInfo = Spirto;
 		};
+		26CBBD9622E6FFA100CB27D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26CBBD9222E6FFA100CB27D1 /* NetworkLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2649359E21B6317400FA3816;
+			remoteInfo = NetworkLayer;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		26C377BA230A6880004097F3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		26225B0B230BCE83006ADB41 /* TopTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabBarController.swift; sourceTree = "<group>"; };
+		26225B0E230BCED0006ADB41 /* TabBarItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarItem.xib; sourceTree = "<group>"; };
+		26225B11230BD6E8006ADB41 /* STabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STabBarController.xib; sourceTree = "<group>"; };
 		2640BBD822E1C4DA00C9A801 /* Spirto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spirto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2640BBDB22E1C4DA00C9A801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2640BBDD22E1C4DA00C9A801 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +152,86 @@
 		2640BBF722E1C4DD00C9A801 /* SpirtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpirtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2640BBFB22E1C4DD00C9A801 /* SpirtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirtoUITests.swift; sourceTree = "<group>"; };
 		2640BBFD22E1C4DD00C9A801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264FA4C2230A899C003554C4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		264FA4C4230A89A7003554C4 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		264FA4C6230A89FE003554C4 /* AddressRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRouter.swift; sourceTree = "<group>"; };
+		2681F2EB2301371C0036E42A /* PlaceOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderViewController.swift; sourceTree = "<group>"; };
+		2681F2EE2301372A0036E42A /* PlaceOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceOrderViewController.xib; sourceTree = "<group>"; };
+		2681F2F223013F1B0036E42A /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		2681F2F423013F2C0036E42A /* AddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressViewController.xib; sourceTree = "<group>"; };
+		2681F2F723013FCA0036E42A /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		2681F2F923013FD70036E42A /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		2681F2FB230141390036E42A /* AddressModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModels.swift; sourceTree = "<group>"; };
+		2681F2FD230145870036E42A /* AddressInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressInteractor.swift; sourceTree = "<group>"; };
+		2681F2FF230145930036E42A /* AddressPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressPresenter.swift; sourceTree = "<group>"; };
+		2681F301230145C60036E42A /* AddressWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressWorker.swift; sourceTree = "<group>"; };
+		2681F304230147BD0036E42A /* AddressesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesService.swift; sourceTree = "<group>"; };
+		2681F306230151EA0036E42A /* Spirto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spirto.entitlements; sourceTree = "<group>"; };
+		2692EBC222E95CF400192405 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		2692EBC422E95D0400192405 /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
+		26B7E05722EEE656007DA653 /* CheckoutModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutModels.swift; sourceTree = "<group>"; };
+		26B7E05B22EEE75B007DA653 /* CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesService.swift; sourceTree = "<group>"; };
+		26BF52DD22EDF86100D6E575 /* STabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STabBarController.swift; sourceTree = "<group>"; };
+		26BF52E022EDFAF600D6E575 /* CheckoutSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutSceneViewController.swift; sourceTree = "<group>"; };
+		26BF52E222EDFB1A00D6E575 /* CheckoutSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutSceneViewController.xib; sourceTree = "<group>"; };
+		26BF52E422EDFC1500D6E575 /* CheckoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutHelper.swift; sourceTree = "<group>"; };
+		26BF52E622EE9FA500D6E575 /* CheckoutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutPresenter.swift; sourceTree = "<group>"; };
+		26BF52E822EE9FB000D6E575 /* CheckoutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutInteractor.swift; sourceTree = "<group>"; };
+		26BF52EA22EE9FC200D6E575 /* CheckoutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutRouter.swift; sourceTree = "<group>"; };
+		26BF52EC22EE9FCD00D6E575 /* CheckoutWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutWorker.swift; sourceTree = "<group>"; };
+		26BF52EF22EEA0F500D6E575 /* CartItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemTableViewCell.swift; sourceTree = "<group>"; };
+		26BF52F122EEA10200D6E575 /* CartItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemTableViewCell.xib; sourceTree = "<group>"; };
+		26BF52F422EEAA0800D6E575 /* HorizontalScrollingToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollingToolbar.swift; sourceTree = "<group>"; };
+		26BF52F922EEB5C300D6E575 /* SToolbarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SToolbarCell.swift; sourceTree = "<group>"; };
+		26C363F822F00F43006ED451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		26C363FA22F01025006ED451 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		26C363FC22F010EA006ED451 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		26C363FE22F010F8006ED451 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		26C3640022F01101006ED451 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		26C3640222F0110D006ED451 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		26C3640622F011B1006ED451 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		26C3640C22F18D55006ED451 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		26C3640E22F18D6C006ED451 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		26C3641022F18D7D006ED451 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		26C3641222F18D87006ED451 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		26C3641422F18D95006ED451 /* ProfileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWorker.swift; sourceTree = "<group>"; };
+		26C3641922F6F211006ED451 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		26C3641A22F6F211006ED451 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		26C3641B22F6F211006ED451 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		26C3641C22F6F211006ED451 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		26C3641D22F6F212006ED451 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		26C3641E22F6F212006ED451 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		26C3641F22F6F212006ED451 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		26C3642022F6F212006ED451 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		26C3642122F6F212006ED451 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		26C3642222F6F212006ED451 /* Montserrat-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-RegularItalic.ttf"; sourceTree = "<group>"; };
+		26C3642322F6F212006ED451 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		26C3642422F6F212006ED451 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		26C3642522F6F212006ED451 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		26C3642622F6F213006ED451 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		26C3642722F6F213006ED451 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		26C3642822F6F213006ED451 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		26C3642922F6F213006ED451 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		26C3642A22F6F213006ED451 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		26C3642B22F6F213006ED451 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		26C3644022F6F4B2006ED451 /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		26C3644222F6F579006ED451 /* MenuDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuDetailViewController.xib; sourceTree = "<group>"; };
+		26C3644422F6F586006ED451 /* MenuDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailViewController.swift; sourceTree = "<group>"; };
+		26C3644622F6FFE7006ED451 /* CustomPresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationAnimator.swift; sourceTree = "<group>"; };
+		26C3644C22F71235006ED451 /* ProfileModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModels.swift; sourceTree = "<group>"; };
+		26C377AE230A4D7F004097F3 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		26CBBD8E22E6FBAB00CB27D1 /* MenuItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsService.swift; sourceTree = "<group>"; };
+		26CBBD9222E6FFA100CB27D1 /* NetworkLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkLayer.xcodeproj; path = NetworkLayer/NetworkLayer.xcodeproj; sourceTree = "<group>"; };
+		26CBBD9A22E7085600CB27D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		26CBBD9D22E7F57E00CB27D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		26CBBD9F22E7F58900CB27D1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		26CBBDA122E7F59200CB27D1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		26CBBDA622E7F5C000CB27D1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		26CBBDA822E7F5D000CB27D1 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		26CBBDAA22E7F5F700CB27D1 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		26CBBDAC22E7F71E00CB27D1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		26CBBDAF22E7F92100CB27D1 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		26E2E30F230AA1170035912F /* SToolbarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SToolbarCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CBBD9922E6FFAC00CB27D1 /* libNetworkLayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +263,12 @@
 		2640BBCF22E1C4DA00C9A801 = {
 			isa = PBXGroup;
 			children = (
+				26CBBD9222E6FFA100CB27D1 /* NetworkLayer.xcodeproj */,
 				2640BBDA22E1C4DA00C9A801 /* Spirto */,
 				2640BBEF22E1C4DD00C9A801 /* SpirtoTests */,
 				2640BBFA22E1C4DD00C9A801 /* SpirtoUITests */,
 				2640BBD922E1C4DA00C9A801 /* Products */,
+				26CBBD9822E6FFAC00CB27D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +285,18 @@
 		2640BBDA22E1C4DA00C9A801 /* Spirto */ = {
 			isa = PBXGroup;
 			children = (
+				2681F306230151EA0036E42A /* Spirto.entitlements */,
+				26BF52F322EEA9E500D6E575 /* HorizontalScrollingToolbar */,
+				26BF52DB22EDF75500D6E575 /* Tab bar */,
+				26CBBDAE22E7F91500CB27D1 /* Helpers */,
+				26CBBD8922E6E51900CB27D1 /* Services */,
+				264FA4C1230A898E003554C4 /* Map Scene */,
+				2681F2F123013F040036E42A /* Adresses Scene */,
+				26C3641822F6F202006ED451 /* Fonts */,
+				26C3640B22F18D39006ED451 /* Profile Scene */,
+				26C363F722F00F37006ED451 /* Login Scene */,
+				26CBBD9C22E7F56E00CB27D1 /* Home Scene */,
+				26BF52DF22EDFAD600D6E575 /* Checkout Scene */,
 				2640BBDB22E1C4DA00C9A801 /* AppDelegate.swift */,
 				2640BBDD22E1C4DA00C9A801 /* ViewController.swift */,
 				2640BBDF22E1C4DA00C9A801 /* Main.storyboard */,
@@ -125,6 +325,243 @@
 			path = SpirtoUITests;
 			sourceTree = "<group>";
 		};
+		264FA4C1230A898E003554C4 /* Map Scene */ = {
+			isa = PBXGroup;
+			children = (
+				264FA4C2230A899C003554C4 /* MapViewController.swift */,
+				264FA4C4230A89A7003554C4 /* MapViewController.xib */,
+			);
+			path = "Map Scene";
+			sourceTree = "<group>";
+		};
+		2681F2F123013F040036E42A /* Adresses Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2681F2F623013FB90036E42A /* TableView */,
+				2681F2F223013F1B0036E42A /* AddressViewController.swift */,
+				2681F2F423013F2C0036E42A /* AddressViewController.xib */,
+				2681F2FB230141390036E42A /* AddressModels.swift */,
+				2681F2FD230145870036E42A /* AddressInteractor.swift */,
+				2681F2FF230145930036E42A /* AddressPresenter.swift */,
+				2681F301230145C60036E42A /* AddressWorker.swift */,
+				264FA4C6230A89FE003554C4 /* AddressRouter.swift */,
+			);
+			path = "Adresses Scene";
+			sourceTree = "<group>";
+		};
+		2681F2F623013FB90036E42A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2681F2F723013FCA0036E42A /* AddressTableViewCell.swift */,
+				2681F2F923013FD70036E42A /* AddressTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		2681F303230147850036E42A /* AddressesService */ = {
+			isa = PBXGroup;
+			children = (
+				2681F304230147BD0036E42A /* AddressesService.swift */,
+			);
+			path = AddressesService;
+			sourceTree = "<group>";
+		};
+		2692EBC022E95CE600192405 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2692EBC222E95CF400192405 /* MenuItemTableViewCell.swift */,
+				2692EBC422E95D0400192405 /* MenuItemTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		26B7E05A22EEE74C007DA653 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				26B7E05B22EEE75B007DA653 /* CategoriesService.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		26BF52DB22EDF75500D6E575 /* Tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				26225B0B230BCE83006ADB41 /* TopTabBarController.swift */,
+				26BF52DD22EDF86100D6E575 /* STabBarController.swift */,
+				26225B11230BD6E8006ADB41 /* STabBarController.xib */,
+				26225B0E230BCED0006ADB41 /* TabBarItem.xib */,
+			);
+			path = "Tab bar";
+			sourceTree = "<group>";
+		};
+		26BF52DF22EDFAD600D6E575 /* Checkout Scene */ = {
+			isa = PBXGroup;
+			children = (
+				26BF52EE22EEA0E800D6E575 /* TableView */,
+				26BF52E022EDFAF600D6E575 /* CheckoutSceneViewController.swift */,
+				26BF52E222EDFB1A00D6E575 /* CheckoutSceneViewController.xib */,
+				26BF52E622EE9FA500D6E575 /* CheckoutPresenter.swift */,
+				26BF52E822EE9FB000D6E575 /* CheckoutInteractor.swift */,
+				26BF52EA22EE9FC200D6E575 /* CheckoutRouter.swift */,
+				26BF52EC22EE9FCD00D6E575 /* CheckoutWorker.swift */,
+				26B7E05722EEE656007DA653 /* CheckoutModels.swift */,
+				2681F2EB2301371C0036E42A /* PlaceOrderViewController.swift */,
+				2681F2EE2301372A0036E42A /* PlaceOrderViewController.xib */,
+			);
+			path = "Checkout Scene";
+			sourceTree = "<group>";
+		};
+		26BF52EE22EEA0E800D6E575 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				26BF52EF22EEA0F500D6E575 /* CartItemTableViewCell.swift */,
+				26BF52F122EEA10200D6E575 /* CartItemTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		26BF52F322EEA9E500D6E575 /* HorizontalScrollingToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				26BF52F422EEAA0800D6E575 /* HorizontalScrollingToolbar.swift */,
+			);
+			path = HorizontalScrollingToolbar;
+			sourceTree = "<group>";
+		};
+		26BF52F822EEB5A700D6E575 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				26BF52F922EEB5C300D6E575 /* SToolbarCell.swift */,
+				26E2E30F230AA1170035912F /* SToolbarCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		26C363F722F00F37006ED451 /* Login Scene */ = {
+			isa = PBXGroup;
+			children = (
+				26C363F822F00F43006ED451 /* LoginViewController.swift */,
+				26C363FA22F01025006ED451 /* LoginViewController.xib */,
+				26C363FC22F010EA006ED451 /* LoginRouter.swift */,
+				26C363FE22F010F8006ED451 /* LoginInteractor.swift */,
+				26C3640022F01101006ED451 /* LoginPresenter.swift */,
+				26C3640222F0110D006ED451 /* LoginWorker.swift */,
+			);
+			path = "Login Scene";
+			sourceTree = "<group>";
+		};
+		26C3640B22F18D39006ED451 /* Profile Scene */ = {
+			isa = PBXGroup;
+			children = (
+				26C3640C22F18D55006ED451 /* ProfileViewController.swift */,
+				26C3640E22F18D6C006ED451 /* ProfileViewController.xib */,
+				26C3641022F18D7D006ED451 /* ProfileInteractor.swift */,
+				26C3641222F18D87006ED451 /* ProfilePresenter.swift */,
+				26C3641422F18D95006ED451 /* ProfileWorker.swift */,
+				26C3644C22F71235006ED451 /* ProfileModels.swift */,
+			);
+			path = "Profile Scene";
+			sourceTree = "<group>";
+		};
+		26C3641822F6F202006ED451 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				26C3642B22F6F213006ED451 /* Montserrat-Black.ttf */,
+				26C3642722F6F213006ED451 /* Montserrat-BlackItalic.ttf */,
+				26C3642022F6F212006ED451 /* Montserrat-Bold.ttf */,
+				26C3641E22F6F212006ED451 /* Montserrat-BoldItalic.ttf */,
+				26C3641F22F6F212006ED451 /* Montserrat-ExtraBold.ttf */,
+				26C3641A22F6F211006ED451 /* Montserrat-ExtraBoldItalic.ttf */,
+				26C3642622F6F213006ED451 /* Montserrat-ExtraLight.ttf */,
+				26C3642522F6F212006ED451 /* Montserrat-ExtraLightItalic.ttf */,
+				26C3642322F6F212006ED451 /* Montserrat-Light.ttf */,
+				26C3642922F6F213006ED451 /* Montserrat-LightItalic.ttf */,
+				26C3642822F6F213006ED451 /* Montserrat-Medium.ttf */,
+				26C3642122F6F212006ED451 /* Montserrat-MediumItalic.ttf */,
+				26C3641D22F6F212006ED451 /* Montserrat-Regular.ttf */,
+				26C3642222F6F212006ED451 /* Montserrat-RegularItalic.ttf */,
+				26C3641922F6F211006ED451 /* Montserrat-SemiBold.ttf */,
+				26C3641B22F6F211006ED451 /* Montserrat-SemiBoldItalic.ttf */,
+				26C3642422F6F212006ED451 /* Montserrat-Thin.ttf */,
+				26C3642A22F6F213006ED451 /* Montserrat-ThinItalic.ttf */,
+				26C3641C22F6F211006ED451 /* OFL.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		26C3643F22F6F480006ED451 /* Menu Item Detail */ = {
+			isa = PBXGroup;
+			children = (
+				26C3644222F6F579006ED451 /* MenuDetailViewController.xib */,
+				26C3644422F6F586006ED451 /* MenuDetailViewController.swift */,
+			);
+			path = "Menu Item Detail";
+			sourceTree = "<group>";
+		};
+		26CBBD8922E6E51900CB27D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2681F303230147850036E42A /* AddressesService */,
+				26B7E05A22EEE74C007DA653 /* Categories */,
+				26CBBD8D22E6FA0C00CB27D1 /* MenuItems */,
+				26CBBD9A22E7085600CB27D1 /* Extensions.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		26CBBD8D22E6FA0C00CB27D1 /* MenuItems */ = {
+			isa = PBXGroup;
+			children = (
+				26CBBD8E22E6FBAB00CB27D1 /* MenuItemsService.swift */,
+			);
+			path = MenuItems;
+			sourceTree = "<group>";
+		};
+		26CBBD9322E6FFA100CB27D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26CBBD9722E6FFA100CB27D1 /* libNetworkLayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26CBBD9822E6FFAC00CB27D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26CBBD9C22E7F56E00CB27D1 /* Home Scene */ = {
+			isa = PBXGroup;
+			children = (
+				26C3643F22F6F480006ED451 /* Menu Item Detail */,
+				26BF52F822EEB5A700D6E575 /* CollectionView */,
+				2692EBC022E95CE600192405 /* TableView */,
+				26CBBD9D22E7F57E00CB27D1 /* HomeViewController.swift */,
+				26CBBD9F22E7F58900CB27D1 /* HomeInteractor.swift */,
+				26CBBDA122E7F59200CB27D1 /* HomePresenter.swift */,
+				26CBBDA622E7F5C000CB27D1 /* HomeRouter.swift */,
+				26CBBDA822E7F5D000CB27D1 /* HomeWorker.swift */,
+				26CBBDAA22E7F5F700CB27D1 /* HomeModels.swift */,
+				26CBBDAC22E7F71E00CB27D1 /* HomeViewController.xib */,
+			);
+			path = "Home Scene";
+			sourceTree = "<group>";
+		};
+		26CBBDAE22E7F91500CB27D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				26C3644022F6F4B2006ED451 /* CustomPresentationController.swift */,
+				26CBBDAF22E7F92100CB27D1 /* UIExtensions.swift */,
+				26BF52E422EDFC1500D6E575 /* CheckoutHelper.swift */,
+				26C3640622F011B1006ED451 /* UIViewControllerExtensions.swift */,
+				26C3644622F6FFE7006ED451 /* CustomPresentationAnimator.swift */,
+				26C377AE230A4D7F004097F3 /* UserManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +572,8 @@
 				2640BBD422E1C4DA00C9A801 /* Sources */,
 				2640BBD522E1C4DA00C9A801 /* Frameworks */,
 				2640BBD622E1C4DA00C9A801 /* Resources */,
+				2647F59922F9260500560975 /* ShellScript */,
+				26C377BA230A6880004097F3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +654,12 @@
 			mainGroup = 2640BBCF22E1C4DA00C9A801;
 			productRefGroup = 2640BBD922E1C4DA00C9A801 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26CBBD9322E6FFA100CB27D1 /* Products */;
+					ProjectRef = 26CBBD9222E6FFA100CB27D1 /* NetworkLayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2640BBD722E1C4DA00C9A801 /* Spirto */,
@@ -224,14 +669,57 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		26CBBD9722E6FFA100CB27D1 /* libNetworkLayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNetworkLayer.a;
+			remoteRef = 26CBBD9622E6FFA100CB27D1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		2640BBD622E1C4DA00C9A801 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2681F2EF2301372A0036E42A /* PlaceOrderViewController.xib in Resources */,
+				26C3643622F6F213006ED451 /* Montserrat-Light.ttf in Resources */,
+				26C3643422F6F213006ED451 /* Montserrat-MediumItalic.ttf in Resources */,
+				26C3643222F6F213006ED451 /* Montserrat-ExtraBold.ttf in Resources */,
+				26C3642F22F6F213006ED451 /* OFL.txt in Resources */,
 				2640BBE622E1C4DD00C9A801 /* LaunchScreen.storyboard in Resources */,
+				26C3642C22F6F213006ED451 /* Montserrat-SemiBold.ttf in Resources */,
+				26C3643022F6F213006ED451 /* Montserrat-Regular.ttf in Resources */,
 				2640BBE322E1C4DD00C9A801 /* Assets.xcassets in Resources */,
 				2640BBE122E1C4DA00C9A801 /* Main.storyboard in Resources */,
+				26BF52E322EDFB1A00D6E575 /* CheckoutSceneViewController.xib in Resources */,
+				26C3643B22F6F213006ED451 /* Montserrat-Medium.ttf in Resources */,
+				26C3643822F6F213006ED451 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				2681F2FA23013FD70036E42A /* AddressTableViewCell.xib in Resources */,
+				26C3643E22F6F213006ED451 /* Montserrat-Black.ttf in Resources */,
+				26BF52F222EEA10200D6E575 /* CartItemTableViewCell.xib in Resources */,
+				2681F2F523013F2C0036E42A /* AddressViewController.xib in Resources */,
+				26C3643122F6F213006ED451 /* Montserrat-BoldItalic.ttf in Resources */,
+				26C3643A22F6F213006ED451 /* Montserrat-BlackItalic.ttf in Resources */,
+				26C3644322F6F579006ED451 /* MenuDetailViewController.xib in Resources */,
+				26C3643922F6F213006ED451 /* Montserrat-ExtraLight.ttf in Resources */,
+				26225B12230BD6E8006ADB41 /* STabBarController.xib in Resources */,
+				26C3642E22F6F213006ED451 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				26C3643522F6F213006ED451 /* Montserrat-RegularItalic.ttf in Resources */,
+				264FA4C5230A89A7003554C4 /* MapViewController.xib in Resources */,
+				2692EBC522E95D0400192405 /* MenuItemTableViewCell.xib in Resources */,
+				26CBBDAD22E7F71E00CB27D1 /* HomeViewController.xib in Resources */,
+				26C3643322F6F213006ED451 /* Montserrat-Bold.ttf in Resources */,
+				26E2E310230AA1170035912F /* SToolbarCell.xib in Resources */,
+				26C3643D22F6F213006ED451 /* Montserrat-ThinItalic.ttf in Resources */,
+				26C3643722F6F213006ED451 /* Montserrat-Thin.ttf in Resources */,
+				26225B0F230BCED0006ADB41 /* TabBarItem.xib in Resources */,
+				26C3642D22F6F213006ED451 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				26C3640F22F18D6C006ED451 /* ProfileViewController.xib in Resources */,
+				26C363FB22F01025006ED451 /* LoginViewController.xib in Resources */,
+				26C3643C22F6F213006ED451 /* Montserrat-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +739,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2647F59922F9260500560975 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2640BBD422E1C4DA00C9A801 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BF52E722EE9FA500D6E575 /* CheckoutPresenter.swift in Sources */,
+				26CBBD9B22E7085600CB27D1 /* Extensions.swift in Sources */,
+				2681F2FC230141390036E42A /* AddressModels.swift in Sources */,
+				26CBBDB022E7F92100CB27D1 /* UIExtensions.swift in Sources */,
+				2681F2F323013F1B0036E42A /* AddressViewController.swift in Sources */,
+				26CBBDA022E7F58900CB27D1 /* HomeInteractor.swift in Sources */,
+				26CBBDAB22E7F5F700CB27D1 /* HomeModels.swift in Sources */,
+				26225B0D230BCE83006ADB41 /* TopTabBarController.swift in Sources */,
+				26BF52E522EDFC1500D6E575 /* CheckoutHelper.swift in Sources */,
+				26B7E05822EEE656007DA653 /* CheckoutModels.swift in Sources */,
+				26C3640322F0110D006ED451 /* LoginWorker.swift in Sources */,
+				26CBBDA922E7F5D000CB27D1 /* HomeWorker.swift in Sources */,
+				2681F300230145930036E42A /* AddressPresenter.swift in Sources */,
+				26CBBD8F22E6FBAB00CB27D1 /* MenuItemsService.swift in Sources */,
 				2640BBDE22E1C4DA00C9A801 /* ViewController.swift in Sources */,
+				2681F2F823013FCA0036E42A /* AddressTableViewCell.swift in Sources */,
+				26C3641322F18D87006ED451 /* ProfilePresenter.swift in Sources */,
+				26C3644522F6F586006ED451 /* MenuDetailViewController.swift in Sources */,
+				26BF52E922EE9FB000D6E575 /* CheckoutInteractor.swift in Sources */,
+				26C3640D22F18D55006ED451 /* ProfileViewController.swift in Sources */,
+				264FA4C7230A89FE003554C4 /* AddressRouter.swift in Sources */,
+				26BF52F022EEA0F500D6E575 /* CartItemTableViewCell.swift in Sources */,
+				26BF52F522EEAA0800D6E575 /* HorizontalScrollingToolbar.swift in Sources */,
+				26C363F922F00F43006ED451 /* LoginViewController.swift in Sources */,
+				26BF52ED22EE9FCD00D6E575 /* CheckoutWorker.swift in Sources */,
+				26CBBDA722E7F5C000CB27D1 /* HomeRouter.swift in Sources */,
+				26C3640122F01101006ED451 /* LoginPresenter.swift in Sources */,
+				26CBBDA222E7F59200CB27D1 /* HomePresenter.swift in Sources */,
+				26C363FF22F010F8006ED451 /* LoginInteractor.swift in Sources */,
+				26C3644722F6FFE7006ED451 /* CustomPresentationAnimator.swift in Sources */,
+				26BF52EB22EE9FC200D6E575 /* CheckoutRouter.swift in Sources */,
+				26BF52DE22EDF86100D6E575 /* STabBarController.swift in Sources */,
+				26C3640722F011B1006ED451 /* UIViewControllerExtensions.swift in Sources */,
+				264FA4C3230A899C003554C4 /* MapViewController.swift in Sources */,
+				26BF52FA22EEB5C300D6E575 /* SToolbarCell.swift in Sources */,
+				2692EBC322E95CF400192405 /* MenuItemTableViewCell.swift in Sources */,
+				2681F2EC2301371C0036E42A /* PlaceOrderViewController.swift in Sources */,
+				2681F305230147BD0036E42A /* AddressesService.swift in Sources */,
+				26C3641522F18D95006ED451 /* ProfileWorker.swift in Sources */,
+				2681F2FE230145870036E42A /* AddressInteractor.swift in Sources */,
+				26C3644122F6F4B2006ED451 /* CustomPresentationController.swift in Sources */,
+				26C3644D22F71235006ED451 /* ProfileModels.swift in Sources */,
+				26BF52E122EDFAF600D6E575 /* CheckoutSceneViewController.swift in Sources */,
+				26B7E05C22EEE75B007DA653 /* CategoriesService.swift in Sources */,
+				26CBBD9E22E7F57E00CB27D1 /* HomeViewController.swift in Sources */,
+				26C363FD22F010EA006ED451 /* LoginRouter.swift in Sources */,
+				2681F302230145C60036E42A /* AddressWorker.swift in Sources */,
+				26C3641122F18D7D006ED451 /* ProfileInteractor.swift in Sources */,
 				2640BBDC22E1C4DA00C9A801 /* AppDelegate.swift in Sources */,
+				26C377AF230A4D7F004097F3 /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,13 +988,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spirto/Spirto.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3RCCUG568;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Spirto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.Spirto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -450,13 +1012,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spirto/Spirto.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3RCCUG568;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Spirto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.Spirto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

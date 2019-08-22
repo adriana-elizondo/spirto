@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+protocol CheckoutPresenterLogic {
+    func presentCartItems(items: [String: CartItem])
+    func presentTotal(total: Float)
+}
+class CheckoutPresenter: CheckoutPresenterLogic {
+    weak var viewcontorller: CheckoutDisplayLogic?
+    func presentCartItems(items: [String: CartItem]) {
+        viewcontorller?.displayItems(items: Array(items.values))
+    }
+    func presentTotal(total: Float) {
+        viewcontorller?.updateTotal(total: total)
+    }
+}

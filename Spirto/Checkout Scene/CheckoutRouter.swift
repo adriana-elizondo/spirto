@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import UIKit
+
+protocol CheckoutRoutingLogic {
+   func goToUsersAddressPage()
+}
+
+class CheckoutRouter: NSObject, CheckoutRoutingLogic {
+    weak var navigationController: UINavigationController?
+    func goToUsersAddressPage() {
+        let addressesViewController = AddressViewController(nibName: nil)
+        navigationController?.pushViewController(addressesViewController, animated: true)
+    }
+}

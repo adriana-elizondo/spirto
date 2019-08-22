@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import NetworkLayer
+
+extension EndpointType {
+    var baseUrl: URL {
+        return URL(string: "http://10.128.59.107:8080")!
+    }
+}

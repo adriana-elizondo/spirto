@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+protocol CheckoutBusinessLogic {
+    func viewCurrentCart()
+    func placeOrder()
+}
+class CheckoutInteractor: CheckoutBusinessLogic {
+    var presenter: CheckoutPresenterLogic?
+    private var helper = CheckoutHelper.sharedInstance
+    func viewCurrentCart() {
+        presenter?.presentCartItems(items: helper.getAllItems())
+        presenter?.presentTotal(total: helper.getTotal())
+    }
+    func placeOrder() {}
+}

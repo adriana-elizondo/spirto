@@ -1,18 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckoutSceneViewController" customModule="Spirto" customModuleProvider="target">
+            <connections>
+                <outlet property="checkoutTableView" destination="TDM-lI-HVA" id="ZIH-U9-2U8"/>
+                <outlet property="payButton" destination="z14-qI-neh" id="alI-NB-RrC"/>
+                <outlet property="totalPrice" destination="EOu-7A-yeZ" id="24G-xw-n2V"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9te-cS-E6G"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TDM-lI-HVA">
+                    <rect key="frame" x="0.0" y="44" width="414" height="708"/>
+                    <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wck-Qs-a9o"/>
+                        <outlet property="delegate" destination="-1" id="dYC-xj-7g1"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z14-qI-neh">
+                    <rect key="frame" x="0.0" y="822" width="414" height="74"/>
+                    <color key="backgroundColor" red="0.51372549020000002" green="0.078431372550000003" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="3w4-Wk-dnV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                    <state key="normal" title="Proceed">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="proceed:" destination="-1" eventType="touchUpInside" id="pph-tt-wB1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOu-7A-yeZ">
+                    <rect key="frame" x="20" y="762" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FEB-Pn-vyZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                    <color key="textColor" red="0.88235294117647056" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="z14-qI-neh" secondAttribute="bottom" id="0oJ-ii-1cS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EOu-7A-yeZ" secondAttribute="trailing" constant="20" id="6hX-nv-UtM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TDM-lI-HVA" secondAttribute="trailing" id="76s-wq-8KR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="z14-qI-neh" secondAttribute="trailing" id="D8f-tO-CCe"/>
+                <constraint firstItem="TDM-lI-HVA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="I0q-26-jfZ"/>
+                <constraint firstItem="EOu-7A-yeZ" firstAttribute="top" secondItem="TDM-lI-HVA" secondAttribute="bottom" constant="10" id="Mm0-bU-QNm"/>
+                <constraint firstItem="TDM-lI-HVA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OzH-xd-0BR"/>
+                <constraint firstItem="EOu-7A-yeZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="P5s-e3-d4h"/>
+                <constraint firstItem="EOu-7A-yeZ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="XU9-Nk-Nsc"/>
+                <constraint firstItem="z14-qI-neh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cTb-ci-kTG"/>
+                <constraint firstItem="z14-qI-neh" firstAttribute="top" secondItem="EOu-7A-yeZ" secondAttribute="bottom" constant="20" id="z7C-Fb-aEr"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
         </view>
     </objects>
 </document>
