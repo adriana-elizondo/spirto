@@ -33,7 +33,6 @@ class TopTabBar: UIView {
         var currentFrame = frame
         currentFrame.size.height = newHeight
         frame = currentFrame
-        layoutIfNeeded()
         delegate?.updatedHeight(to: newHeight)
     }
     func setItems(items: [TopTabBarContainable]) {
@@ -46,6 +45,9 @@ class TopTabBar: UIView {
             addSubview(item)
         }
     }
+    func reloadViews() {
+        setItems(items: items)
+    }
     func addNewItem(item: TopTabBarContainable) {
         items.append(item)
         setItems(items: items)
@@ -55,6 +57,11 @@ class TopTabBar: UIView {
     }
     func hideMe(hide: Bool) {
         setHeight(to: hide ? 0 : currentHeight)
+    }
+    func selectItem(at index: Int) {
+        guard items.count > index else { return }
+        items[index].selectedState()
+        delegate?.didSelect(item: items[index])
     }
     @objc private func tappedItem(sender: ItemTapGesture) {
         guard items.count > sender.indexOfItem else { return }
@@ -76,6 +83,7 @@ class TopTabBarController: UIViewController, TopTabBarDelegate {
     private(set) var viewcontrollers: [UIViewController]?
     private var childController: UIViewController?
     private let tabBarDefaultHeight: CGFloat = 120
+    private var currentHeight: CGFloat = 120
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar = TopTabBar(frame: CGRect(x: 0, y: 0,
@@ -84,6 +92,13 @@ class TopTabBarController: UIViewController, TopTabBarDelegate {
         tabBar?.setHeight(to: tabBarDefaultHeight)
         tabBar?.delegate = self
         self.view.addSubview(tabBar!)
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tabBar?.frame = CGRect(x: 0, y: 0,
+                              width: view.bounds.width,
+                              height: currentHeight)
+        tabBar?.reloadViews()
     }
     private func addChildController(with viewController: UIViewController?) {
         guard viewController != nil else { return }
@@ -109,11 +124,11 @@ class TopTabBarController: UIViewController, TopTabBarDelegate {
         addChildController(with: item.viewcontroller)
     }
     func updatedHeight(to newHeight: CGFloat) {
-        view.setNeedsLayout()
+        let newChildControllerHeight = view.bounds.height - newHeight
+        currentHeight = newHeight
         childController?.view.frame = CGRect(x: 0,
                                              y: newHeight,
                                              width: view.bounds.width,
-                                             height: view.bounds.height - newHeight)
-        view.layoutIfNeeded()
+                                             height: newChildControllerHeight)
     }
 }

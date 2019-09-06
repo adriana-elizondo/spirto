@@ -11,6 +11,7 @@ import UIKit
 
 protocol AddressDisplayLogic: class {}
 class AddressViewController: UIViewController, AddressDisplayLogic {
+    @IBOutlet weak var createAddressButton: UIButton!
     @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var adressTableView: UITableView! {
         didSet {
@@ -27,9 +28,9 @@ class AddressViewController: UIViewController, AddressDisplayLogic {
         super.viewDidLoad()
         setup()
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        (navigationController?.parent as? TopTabBarController)?.tabBar?.hideMe(hide: false)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "Address"
     }
     private func setup() {
         let viewController = self
@@ -39,7 +40,7 @@ class AddressViewController: UIViewController, AddressDisplayLogic {
         interactor.presenter = presenter
         self.interactor = interactor
         let router = AddressRouter()
-        router.navigationController = self.navigationController
+        router.viewController = self
         self.router = router
         //self.interactor?.getAddresses(for: <#T##UserData.User#>)
     }

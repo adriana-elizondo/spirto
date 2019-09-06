@@ -8,6 +8,16 @@
 
 import Foundation
 
-protocol ProfilePresentingLogic {}
-
-class ProfilePresenter: ProfilePresentingLogic {}
+protocol ProfilePresentingLogic {
+    func presentUserData(with user: User?)
+    func presentLogin()
+}
+class ProfilePresenter: ProfilePresentingLogic {
+    weak var viewController: ProfileDisplayLogic?
+    func presentUserData(with user: User?) {
+        viewController?.displayProfileData(user: user)
+    }
+    func presentLogin() {
+        viewController?.displayLogin()
+    }
+}

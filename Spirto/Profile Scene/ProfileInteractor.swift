@@ -9,13 +9,17 @@
 import Foundation
 
 protocol ProfileBusinessLogic {
-    func addAddress()
-    func editAddress()
-    func deleteAddress()
+    func loadUserInfo()
+    func logout()
 }
-
 class ProfileInteractor: ProfileBusinessLogic {
-    func addAddress() {}
-    func editAddress() {}
-    func deleteAddress() {}
+    var helper = UserManager.sharedInstance
+    var presenter: ProfilePresentingLogic?
+    func loadUserInfo() {
+        presenter?.presentUserData(with: helper.getUser())
+    }
+    func logout() {
+        helper.clearUser()
+        presenter?.presentLogin()
+    }
 }

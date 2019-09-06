@@ -12,10 +12,25 @@ import UIKit
 protocol AddressRoutingProtocol {
     func openMap()
 }
-class AddressRouter: AddressRoutingProtocol {
-    weak var navigationController: UINavigationController?
+class AddressRouter: NSObject, AddressRoutingProtocol {
+    weak var viewController: AddressViewController?
     func openMap() {
         let mapController = MapViewController(nibName: nil)
-        navigationController?.pushViewController(mapController, animated: true)
+        //mapController.transitioningDelegate = self
+        viewController?.present(mapController, animated: true, completion: nil)
+    }
+}
+
+extension AddressRouter: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return AddressRouterPresentationController(with: viewController?.createAddressButton.frame ?? .zero)
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        guard dismissed as? MapViewController != nil else {
+            return nil
+        }
+        return MapDismissAnimationController(destinationFrame: viewController?.createAddressButton.frame ?? .zero)
     }
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FacebookCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let loginController = LoginViewController(name: nil)
         let navigationController = UINavigationController(rootViewController: loginController)
         navigationController.isNavigationBarHidden = true
+        AppNavigationHelper.sharedInstance.navigationController = navigationController
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        //Fb SDK
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return ApplicationDelegate.shared.application(app, open: url, options: options)
     }
     func applicationWillResignActive(_ application: UIApplication) {}
 

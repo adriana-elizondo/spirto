@@ -6,11 +6,16 @@
 //  Copyright © 2019 adriana. All rights reserved.
 //
 
+import FacebookLogin
+import FBSDKLoginKit
 import Foundation
 import UIKit
-import LocalAuthentication
 
-protocol LoginDisplayLogic: class {}
+protocol LoginDisplayLogic: class {
+    func goHomeAfterSuccessfulLogin()
+    func sayHiAndGoHome(to user: User)
+    func displayError(with error: Error)
+}
 
 class LoginViewController: UIViewController, LoginDisplayLogic {
     private var router: LoginRoutingProtocol?
@@ -29,8 +34,30 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
         let router = LoginRouter()
         router.navigationController = self.navigationController
         self.router = router
+        interactor.isLoggedIn()
+    }
+    func sayHiAndGoHome(to user: User) {
+        print("Hello \(user.name)")
+        self.router?.goHome()
+    }
+    func goHomeAfterSuccessfulLogin() {
+        self.router?.goHome()
+    }
+    func displayError(with error: Error) {
+        print(error)
     }
     @IBAction func loginTapped(_ sender: Any) {
-        router?.goHome()
+        let loginManager = LoginManager()
+        loginManager.logIn(permissions: [.publicProfile, .email, .userBirthday],
+                           viewController: self) { (result) in
+            switch result {
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                print("User cancelled login.")
+            case .success(_, _, let accessToken):
+                self.interactor?.loginWithFacebook(with: accessToken)
+            }
+        }
     }
 }

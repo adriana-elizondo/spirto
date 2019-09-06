@@ -90,7 +90,7 @@ UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelega
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        let inset = (collectionView.bounds.size.width / 2.0) - (elementWidth / 2.0)
+        let inset = (collectionView.bounds.size.width / 2.0) - (elementWidth / 2)
         return UIEdgeInsets(top: 0, left: inset, bottom: 0, right: inset)
     }
     func collectionView(_ collectionView: UICollectionView,

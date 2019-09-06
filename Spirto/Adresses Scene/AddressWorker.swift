@@ -11,17 +11,17 @@ import NetworkLayer
 
 typealias AddressCompletion = (Result<Addresses.Response, NetworkResponseError>) -> Void
 protocol AddressAPIHandler {
-    func loadAllItems(for user: UserData.User, with completion: @escaping AddressCompletion)
+    func loadAllItems(for user: User, with completion: @escaping AddressCompletion)
     func createNewAddress(with address: Address)
 }
 class AddressWorker: AddressAPIHandler {
     let addressesService = AddressesService()
-    func loadAllItems(for user: UserData.User,
+    func loadAllItems(for user: User,
                       with completion: @escaping (Result<Addresses.Response, NetworkResponseError>) -> Void) {
-        addressesService.parameters = AddressesParameters(userId: user.userId)
+        addressesService.parameters = AddressesParameters(userId: user.userId ?? "")
         addressesService.getAddresses(completion: { (response, error) in
             guard error == nil else { completion(.failure(error!)); return }
-            guard response != nil else { completion(.failure(.parsingError)); return}
+            guard response != nil else { completion(.failure(.parsingError(error: error))); return}
             completion(.success(response!))
         })
     }

@@ -7,19 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261ADD0C23177C470056D3DB /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261ADD0B23177C470056D3DB /* SignupViewController.swift */; };
+		261ADD0E23177C570056D3DB /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261ADD0D23177C570056D3DB /* SignupViewController.xib */; };
+		261ADD1023177C680056D3DB /* SignupInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261ADD0F23177C680056D3DB /* SignupInteractor.swift */; };
+		261E6735230E74F700768B19 /* AddressRouterPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E6734230E74F700768B19 /* AddressRouterPresentationController.swift */; };
+		261E673C230FAADF00768B19 /* MapDismissAnimatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E673B230FAADF00768B19 /* MapDismissAnimatorController.swift */; };
+		261E673F230FAD8A00768B19 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E673E230FAD8A00768B19 /* MapRouter.swift */; };
 		26225B0D230BCE83006ADB41 /* TopTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26225B0B230BCE83006ADB41 /* TopTabBarController.swift */; };
 		26225B0F230BCED0006ADB41 /* TabBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26225B0E230BCED0006ADB41 /* TabBarItem.xib */; };
 		26225B12230BD6E8006ADB41 /* STabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26225B11230BD6E8006ADB41 /* STabBarController.xib */; };
 		2640BBDC22E1C4DA00C9A801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BBDB22E1C4DA00C9A801 /* AppDelegate.swift */; };
-		2640BBDE22E1C4DA00C9A801 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BBDD22E1C4DA00C9A801 /* ViewController.swift */; };
 		2640BBE122E1C4DA00C9A801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2640BBDF22E1C4DA00C9A801 /* Main.storyboard */; };
 		2640BBE322E1C4DD00C9A801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2640BBE222E1C4DD00C9A801 /* Assets.xcassets */; };
 		2640BBE622E1C4DD00C9A801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2640BBE422E1C4DD00C9A801 /* LaunchScreen.storyboard */; };
 		2640BBF122E1C4DD00C9A801 /* SpirtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BBF022E1C4DD00C9A801 /* SpirtoTests.swift */; };
 		2640BBFC22E1C4DD00C9A801 /* SpirtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BBFB22E1C4DD00C9A801 /* SpirtoUITests.swift */; };
+		2645BED52313E836002BA03A /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267694042313E2FA000ED7A1 /* FacebookCore.framework */; };
+		2645BED62313E836002BA03A /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267694032313E2FA000ED7A1 /* FacebookLogin.framework */; };
+		2645BED72313E836002BA03A /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2676940C2313E5BD000ED7A1 /* FacebookShare.framework */; };
+		2645BED82313E91B002BA03A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267694072313E4EE000ED7A1 /* FBSDKCoreKit.framework */; };
+		2645BED92313E91B002BA03A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267694082313E4EE000ED7A1 /* FBSDKLoginKit.framework */; };
+		2645BEDA2313E91B002BA03A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2676940B2313E5BD000ED7A1 /* FBSDKShareKit.framework */; };
+		2645BEDD2313F064002BA03A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645BEDC2313F064002BA03A /* UserService.swift */; };
 		264FA4C3230A899C003554C4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA4C2230A899C003554C4 /* MapViewController.swift */; };
 		264FA4C5230A89A7003554C4 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264FA4C4230A89A7003554C4 /* MapViewController.xib */; };
 		264FA4C7230A89FE003554C4 /* AddressRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA4C6230A89FE003554C4 /* AddressRouter.swift */; };
+		265F7A5F232263B0006CE95E /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F7A5E232263B0006CE95E /* ProfileRouter.swift */; };
+		265F7A6223226686006CE95E /* AppNavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F7A6123226686006CE95E /* AppNavigationHelper.swift */; };
+		267693E92313A6C0000ED7A1 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267693E82313A6C0000ED7A1 /* MapInteractor.swift */; };
 		2681F2EC2301371C0036E42A /* PlaceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2EB2301371C0036E42A /* PlaceOrderViewController.swift */; };
 		2681F2EF2301372A0036E42A /* PlaceOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2681F2EE2301372A0036E42A /* PlaceOrderViewController.xib */; };
 		2681F2F323013F1B0036E42A /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2F223013F1B0036E42A /* AddressViewController.swift */; };
@@ -136,12 +151,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		261ADD0B23177C470056D3DB /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		261ADD0D23177C570056D3DB /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		261ADD0F23177C680056D3DB /* SignupInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupInteractor.swift; sourceTree = "<group>"; };
+		261E6734230E74F700768B19 /* AddressRouterPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRouterPresentationController.swift; sourceTree = "<group>"; };
+		261E673B230FAADF00768B19 /* MapDismissAnimatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDismissAnimatorController.swift; sourceTree = "<group>"; };
+		261E673E230FAD8A00768B19 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
 		26225B0B230BCE83006ADB41 /* TopTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabBarController.swift; sourceTree = "<group>"; };
 		26225B0E230BCED0006ADB41 /* TabBarItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarItem.xib; sourceTree = "<group>"; };
 		26225B11230BD6E8006ADB41 /* STabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STabBarController.xib; sourceTree = "<group>"; };
 		2640BBD822E1C4DA00C9A801 /* Spirto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spirto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2640BBDB22E1C4DA00C9A801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2640BBDD22E1C4DA00C9A801 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2640BBE022E1C4DA00C9A801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2640BBE222E1C4DD00C9A801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2640BBE522E1C4DD00C9A801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,9 +172,20 @@
 		2640BBF722E1C4DD00C9A801 /* SpirtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpirtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2640BBFB22E1C4DD00C9A801 /* SpirtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirtoUITests.swift; sourceTree = "<group>"; };
 		2640BBFD22E1C4DD00C9A801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2645BEDC2313F064002BA03A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		264FA4C2230A899C003554C4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		264FA4C4230A89A7003554C4 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		264FA4C6230A89FE003554C4 /* AddressRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRouter.swift; sourceTree = "<group>"; };
+		265F7A5E232263B0006CE95E /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		265F7A6123226686006CE95E /* AppNavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationHelper.swift; sourceTree = "<group>"; };
+		267693E82313A6C0000ED7A1 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		267694002313E2E2000ED7A1 /* Spirto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Spirto.xcodeproj; sourceTree = "<group>"; };
+		267694032313E2FA000ED7A1 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = Carthage/Build/iOS/FacebookLogin.framework; sourceTree = "<group>"; };
+		267694042313E2FA000ED7A1 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
+		267694072313E4EE000ED7A1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		267694082313E4EE000ED7A1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2676940B2313E5BD000ED7A1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2676940C2313E5BD000ED7A1 /* FacebookShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookShare.framework; path = Carthage/Build/iOS/FacebookShare.framework; sourceTree = "<group>"; };
 		2681F2EB2301371C0036E42A /* PlaceOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderViewController.swift; sourceTree = "<group>"; };
 		2681F2EE2301372A0036E42A /* PlaceOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceOrderViewController.xib; sourceTree = "<group>"; };
 		2681F2F223013F1B0036E42A /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26CBBD9922E6FFAC00CB27D1 /* libNetworkLayer.a in Frameworks */,
+				2645BED82313E91B002BA03A /* FBSDKCoreKit.framework in Frameworks */,
+				2645BED92313E91B002BA03A /* FBSDKLoginKit.framework in Frameworks */,
+				2645BEDA2313E91B002BA03A /* FBSDKShareKit.framework in Frameworks */,
+				2645BED52313E836002BA03A /* FacebookCore.framework in Frameworks */,
+				2645BED62313E836002BA03A /* FacebookLogin.framework in Frameworks */,
+				2645BED72313E836002BA03A /* FacebookShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +297,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		261ADD0923177C2A0056D3DB /* Signup Scene */ = {
+			isa = PBXGroup;
+			children = (
+				261ADD0B23177C470056D3DB /* SignupViewController.swift */,
+				261ADD0D23177C570056D3DB /* SignupViewController.xib */,
+				261ADD0F23177C680056D3DB /* SignupInteractor.swift */,
+			);
+			path = "Signup Scene";
+			sourceTree = "<group>";
+		};
 		2640BBCF22E1C4DA00C9A801 = {
 			isa = PBXGroup;
 			children = (
@@ -294,11 +341,11 @@
 				2681F2F123013F040036E42A /* Adresses Scene */,
 				26C3641822F6F202006ED451 /* Fonts */,
 				26C3640B22F18D39006ED451 /* Profile Scene */,
+				261ADD0923177C2A0056D3DB /* Signup Scene */,
 				26C363F722F00F37006ED451 /* Login Scene */,
 				26CBBD9C22E7F56E00CB27D1 /* Home Scene */,
 				26BF52DF22EDFAD600D6E575 /* Checkout Scene */,
 				2640BBDB22E1C4DA00C9A801 /* AppDelegate.swift */,
-				2640BBDD22E1C4DA00C9A801 /* ViewController.swift */,
 				2640BBDF22E1C4DA00C9A801 /* Main.storyboard */,
 				2640BBE222E1C4DD00C9A801 /* Assets.xcassets */,
 				2640BBE422E1C4DD00C9A801 /* LaunchScreen.storyboard */,
@@ -325,13 +372,29 @@
 			path = SpirtoUITests;
 			sourceTree = "<group>";
 		};
+		2645BEDB2313F006002BA03A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2645BEDC2313F064002BA03A /* UserService.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		264FA4C1230A898E003554C4 /* Map Scene */ = {
 			isa = PBXGroup;
 			children = (
 				264FA4C2230A899C003554C4 /* MapViewController.swift */,
 				264FA4C4230A89A7003554C4 /* MapViewController.xib */,
+				261E673B230FAADF00768B19 /* MapDismissAnimatorController.swift */,
+				261E673E230FAD8A00768B19 /* MapRouter.swift */,
+				267693E82313A6C0000ED7A1 /* MapInteractor.swift */,
 			);
 			path = "Map Scene";
+			sourceTree = "<group>";
+		};
+		267694012313E2E2000ED7A1 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2681F2F123013F040036E42A /* Adresses Scene */ = {
@@ -345,6 +408,7 @@
 				2681F2FF230145930036E42A /* AddressPresenter.swift */,
 				2681F301230145C60036E42A /* AddressWorker.swift */,
 				264FA4C6230A89FE003554C4 /* AddressRouter.swift */,
+				261E6734230E74F700768B19 /* AddressRouterPresentationController.swift */,
 			);
 			path = "Adresses Scene";
 			sourceTree = "<group>";
@@ -459,6 +523,7 @@
 				26C3641222F18D87006ED451 /* ProfilePresenter.swift */,
 				26C3641422F18D95006ED451 /* ProfileWorker.swift */,
 				26C3644C22F71235006ED451 /* ProfileModels.swift */,
+				265F7A5E232263B0006CE95E /* ProfileRouter.swift */,
 			);
 			path = "Profile Scene";
 			sourceTree = "<group>";
@@ -501,6 +566,7 @@
 		26CBBD8922E6E51900CB27D1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2645BEDB2313F006002BA03A /* User */,
 				2681F303230147850036E42A /* AddressesService */,
 				26B7E05A22EEE74C007DA653 /* Categories */,
 				26CBBD8D22E6FA0C00CB27D1 /* MenuItems */,
@@ -528,6 +594,13 @@
 		26CBBD9822E6FFAC00CB27D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2676940C2313E5BD000ED7A1 /* FacebookShare.framework */,
+				2676940B2313E5BD000ED7A1 /* FBSDKShareKit.framework */,
+				267694072313E4EE000ED7A1 /* FBSDKCoreKit.framework */,
+				267694082313E4EE000ED7A1 /* FBSDKLoginKit.framework */,
+				267694042313E2FA000ED7A1 /* FacebookCore.framework */,
+				267694032313E2FA000ED7A1 /* FacebookLogin.framework */,
+				267694002313E2E2000ED7A1 /* Spirto.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -542,6 +615,7 @@
 				26CBBD9F22E7F58900CB27D1 /* HomeInteractor.swift */,
 				26CBBDA122E7F59200CB27D1 /* HomePresenter.swift */,
 				26CBBDA622E7F5C000CB27D1 /* HomeRouter.swift */,
+				26C3644022F6F4B2006ED451 /* CustomPresentationController.swift */,
 				26CBBDA822E7F5D000CB27D1 /* HomeWorker.swift */,
 				26CBBDAA22E7F5F700CB27D1 /* HomeModels.swift */,
 				26CBBDAC22E7F71E00CB27D1 /* HomeViewController.xib */,
@@ -552,12 +626,12 @@
 		26CBBDAE22E7F91500CB27D1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				26C3644022F6F4B2006ED451 /* CustomPresentationController.swift */,
 				26CBBDAF22E7F92100CB27D1 /* UIExtensions.swift */,
 				26BF52E422EDFC1500D6E575 /* CheckoutHelper.swift */,
 				26C3640622F011B1006ED451 /* UIViewControllerExtensions.swift */,
 				26C3644622F6FFE7006ED451 /* CustomPresentationAnimator.swift */,
 				26C377AE230A4D7F004097F3 /* UserManager.swift */,
+				265F7A6123226686006CE95E /* AppNavigationHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -574,6 +648,7 @@
 				2640BBD622E1C4DA00C9A801 /* Resources */,
 				2647F59922F9260500560975 /* ShellScript */,
 				26C377BA230A6880004097F3 /* Embed Frameworks */,
+				2676940F2313E5E4000ED7A1 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -659,6 +734,10 @@
 					ProductGroup = 26CBBD9322E6FFA100CB27D1 /* Products */;
 					ProjectRef = 26CBBD9222E6FFA100CB27D1 /* NetworkLayer.xcodeproj */;
 				},
+				{
+					ProductGroup = 267694012313E2E2000ED7A1 /* Products */;
+					ProjectRef = 267694002313E2E2000ED7A1 /* Spirto.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -716,6 +795,7 @@
 				26C3643D22F6F213006ED451 /* Montserrat-ThinItalic.ttf in Resources */,
 				26C3643722F6F213006ED451 /* Montserrat-Thin.ttf in Resources */,
 				26225B0F230BCED0006ADB41 /* TabBarItem.xib in Resources */,
+				261ADD0E23177C570056D3DB /* SignupViewController.xib in Resources */,
 				26C3642D22F6F213006ED451 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				26C3640F22F18D6C006ED451 /* ProfileViewController.xib in Resources */,
 				26C363FB22F01025006ED451 /* LoginViewController.xib in Resources */,
@@ -755,7 +835,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
+		};
+		2676940F2313E5E4000ED7A1 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookLogin.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookShare.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKLoginKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKShareKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -764,8 +869,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265F7A5F232263B0006CE95E /* ProfileRouter.swift in Sources */,
 				26BF52E722EE9FA500D6E575 /* CheckoutPresenter.swift in Sources */,
 				26CBBD9B22E7085600CB27D1 /* Extensions.swift in Sources */,
+				261ADD0C23177C470056D3DB /* SignupViewController.swift in Sources */,
+				2645BEDD2313F064002BA03A /* UserService.swift in Sources */,
+				261E673C230FAADF00768B19 /* MapDismissAnimatorController.swift in Sources */,
 				2681F2FC230141390036E42A /* AddressModels.swift in Sources */,
 				26CBBDB022E7F92100CB27D1 /* UIExtensions.swift in Sources */,
 				2681F2F323013F1B0036E42A /* AddressViewController.swift in Sources */,
@@ -776,9 +885,9 @@
 				26B7E05822EEE656007DA653 /* CheckoutModels.swift in Sources */,
 				26C3640322F0110D006ED451 /* LoginWorker.swift in Sources */,
 				26CBBDA922E7F5D000CB27D1 /* HomeWorker.swift in Sources */,
+				261E673F230FAD8A00768B19 /* MapRouter.swift in Sources */,
 				2681F300230145930036E42A /* AddressPresenter.swift in Sources */,
 				26CBBD8F22E6FBAB00CB27D1 /* MenuItemsService.swift in Sources */,
-				2640BBDE22E1C4DA00C9A801 /* ViewController.swift in Sources */,
 				2681F2F823013FCA0036E42A /* AddressTableViewCell.swift in Sources */,
 				26C3641322F18D87006ED451 /* ProfilePresenter.swift in Sources */,
 				26C3644522F6F586006ED451 /* MenuDetailViewController.swift in Sources */,
@@ -787,10 +896,12 @@
 				264FA4C7230A89FE003554C4 /* AddressRouter.swift in Sources */,
 				26BF52F022EEA0F500D6E575 /* CartItemTableViewCell.swift in Sources */,
 				26BF52F522EEAA0800D6E575 /* HorizontalScrollingToolbar.swift in Sources */,
+				261ADD1023177C680056D3DB /* SignupInteractor.swift in Sources */,
 				26C363F922F00F43006ED451 /* LoginViewController.swift in Sources */,
 				26BF52ED22EE9FCD00D6E575 /* CheckoutWorker.swift in Sources */,
 				26CBBDA722E7F5C000CB27D1 /* HomeRouter.swift in Sources */,
 				26C3640122F01101006ED451 /* LoginPresenter.swift in Sources */,
+				267693E92313A6C0000ED7A1 /* MapInteractor.swift in Sources */,
 				26CBBDA222E7F59200CB27D1 /* HomePresenter.swift in Sources */,
 				26C363FF22F010F8006ED451 /* LoginInteractor.swift in Sources */,
 				26C3644722F6FFE7006ED451 /* CustomPresentationAnimator.swift in Sources */,
@@ -807,12 +918,14 @@
 				26C3644122F6F4B2006ED451 /* CustomPresentationController.swift in Sources */,
 				26C3644D22F71235006ED451 /* ProfileModels.swift in Sources */,
 				26BF52E122EDFAF600D6E575 /* CheckoutSceneViewController.swift in Sources */,
+				265F7A6223226686006CE95E /* AppNavigationHelper.swift in Sources */,
 				26B7E05C22EEE75B007DA653 /* CategoriesService.swift in Sources */,
 				26CBBD9E22E7F57E00CB27D1 /* HomeViewController.swift in Sources */,
 				26C363FD22F010EA006ED451 /* LoginRouter.swift in Sources */,
 				2681F302230145C60036E42A /* AddressWorker.swift in Sources */,
 				26C3641122F18D7D006ED451 /* ProfileInteractor.swift in Sources */,
 				2640BBDC22E1C4DA00C9A801 /* AppDelegate.swift in Sources */,
+				261E6735230E74F700768B19 /* AddressRouterPresentationController.swift in Sources */,
 				26C377AF230A4D7F004097F3 /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -994,6 +1107,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Spirto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1018,6 +1132,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Spirto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

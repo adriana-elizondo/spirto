@@ -18,7 +18,6 @@ extension UIViewController {
         self.init(nibName: nibName, bundle: nil)
     }
 }
-
 extension UIView {
     func scaleUpDown() {
         UIView.animate(withDuration: 0.2, animations: {
@@ -28,9 +27,25 @@ extension UIView {
         }
     }
 }
-
 extension UIColor {
     static func spirtoColor() -> UIColor {
         return UIColor(displayP3Red: 131/255.0, green: 35/255.0, blue: 57/255.0, alpha: 1.0)
+    }
+}
+extension UIImageView {
+    func setImageColor(color: UIColor) {
+        let templateImage = self.image?.withRenderingMode(.alwaysTemplate)
+        image = templateImage
+        tintColor = color
+    }
+}
+extension UIButton {
+    func disableMe() {
+        isEnabled = false
+        setTitleColor(UIColor.gray.withAlphaComponent(0.5), for: .normal)
+    }
+    func enableMe(with tintColor: UIColor? = UIColor.spirtoColor()) {
+        isEnabled = true
+        setTitleColor(tintColor, for: .normal)
     }
 }

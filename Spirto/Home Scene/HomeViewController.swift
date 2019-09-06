@@ -40,6 +40,10 @@ class HomeViewController: UIViewController, HomeDisplayLogic, ScrollingToolBarHa
         super.viewDidLoad()
         setup()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "Menu"
+    }
     private func setup() {
         let viewController = self
         let interactor = HomeInteractor()

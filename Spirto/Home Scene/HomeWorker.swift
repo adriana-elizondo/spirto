@@ -21,14 +21,14 @@ class HomeWorker: HomeAPIHandler {
     func loadAllItems(with completion: @escaping (Result<MenuItem.Response, NetworkResponseError>) -> Void) {
         menuItemsService.getMenuItems { (response, error) in
             guard error == nil else { completion(.failure(error!)); return }
-            guard response != nil else { completion(.failure(.parsingError)); return}
+            guard response != nil else { completion(.failure(.parsingError(error: error))); return}
             completion(.success(response!))
         }
     }
     func loadCategories(with completion: @escaping (Result<CategoryItem.Response, NetworkResponseError>) -> Void) {
         categoryService.getCategories { (response, error) in
             guard error == nil else { completion(.failure(error!)); return }
-            guard response != nil else { completion(.failure(.parsingError)); return}
+            guard response != nil else { completion(.failure(.parsingError(error: error))); return}
             completion(.success(response!))
         }
     }

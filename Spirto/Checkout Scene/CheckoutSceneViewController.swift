@@ -32,6 +32,10 @@ class CheckoutSceneViewController: UIViewController, CheckoutDisplayLogic {
         super.viewDidLoad()
         setup()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "Cart"
+    }
     private func setup() {
         let viewcontroller = self
         let presenter = CheckoutPresenter()
