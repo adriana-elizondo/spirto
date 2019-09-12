@@ -23,7 +23,7 @@ struct User: Codable {
     var userId: String?
     var name: String
     var phoneNumber: String?
-    var email: String?
+    var email: String
     var birthday: String?
     var photoUrl: String?
     var addresses: [Address]?

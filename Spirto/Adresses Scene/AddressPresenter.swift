@@ -8,7 +8,12 @@
 
 import Foundation
 
-protocol AddressPresentingProtocol {}
+protocol AddressPresentingProtocol {
+    func presentUserAddresses(with addresses: Addresses.Response)
+}
 class AddressPresenter: AddressPresentingProtocol {
     weak var viewController: AddressDisplayLogic?
+    func presentUserAddresses(with addresses: Addresses.Response) {
+        viewController?.displayAddresses(with: Addresses.ViewModel(with: addresses))
+    }
 }

@@ -7,11 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ProfileRoutingProtocol{
     func goToLogin()
+    func goToUsersAddressPage()
 }
 class ProfileRouter: ProfileRoutingProtocol{
+    weak var navigationController: UINavigationController?
+    func goToUsersAddressPage() {
+        let addressesViewController = AddressViewController(nibName: nil)
+        navigationController?.pushViewController(addressesViewController, animated: true)
+    }
     func goToLogin() {
         AppNavigationHelper.sharedInstance.navigationController?.popToRootViewController(animated: true)
     }

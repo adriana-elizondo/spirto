@@ -34,6 +34,7 @@ class ProfileViewController: UIViewController, ProfileDisplayLogic {
         let interactor = ProfileInteractor()
         interactor.presenter = presenter
         let router = ProfileRouter()
+        router.navigationController = navigationController
         self.router = router
         self.interactor = interactor
         interactor.loadUserInfo()
@@ -56,7 +57,9 @@ class ProfileViewController: UIViewController, ProfileDisplayLogic {
         router?.goToLogin()
     }
     //Action
-    @IBAction func manageAddresses(_ sender: Any) {}
+    @IBAction func manageAddresses(_ sender: Any) {
+        router?.goToUsersAddressPage()
+    }
     @IBAction func logout(_ sender: Any) {
         interactor?.logout()
     }

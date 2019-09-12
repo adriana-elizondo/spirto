@@ -17,6 +17,7 @@ protocol LoginPresenterLogic {
 class LoginPresenter: LoginPresenterLogic {
     weak var viewcontroller: LoginDisplayLogic?
     func sayHiAndGoHome(to user: User) {
+        UserManager.sharedInstance.persistUser(user: user)
         viewcontroller?.sayHiAndGoHome(to: user)
     }
     func presentLoginSuccess() {

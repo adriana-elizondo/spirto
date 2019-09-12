@@ -34,6 +34,7 @@
 		264FA4C7230A89FE003554C4 /* AddressRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA4C6230A89FE003554C4 /* AddressRouter.swift */; };
 		265F7A5F232263B0006CE95E /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F7A5E232263B0006CE95E /* ProfileRouter.swift */; };
 		265F7A6223226686006CE95E /* AppNavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F7A6123226686006CE95E /* AppNavigationHelper.swift */; };
+		265F7A6523262978006CE95E /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F7A6423262978006CE95E /* MapPresenter.swift */; };
 		267693E92313A6C0000ED7A1 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267693E82313A6C0000ED7A1 /* MapInteractor.swift */; };
 		2681F2EC2301371C0036E42A /* PlaceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F2EB2301371C0036E42A /* PlaceOrderViewController.swift */; };
 		2681F2EF2301372A0036E42A /* PlaceOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2681F2EE2301372A0036E42A /* PlaceOrderViewController.xib */; };
@@ -178,6 +179,7 @@
 		264FA4C6230A89FE003554C4 /* AddressRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRouter.swift; sourceTree = "<group>"; };
 		265F7A5E232263B0006CE95E /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		265F7A6123226686006CE95E /* AppNavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationHelper.swift; sourceTree = "<group>"; };
+		265F7A6423262978006CE95E /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		267693E82313A6C0000ED7A1 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		267694002313E2E2000ED7A1 /* Spirto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Spirto.xcodeproj; sourceTree = "<group>"; };
 		267694032313E2FA000ED7A1 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = Carthage/Build/iOS/FacebookLogin.framework; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 				261E673B230FAADF00768B19 /* MapDismissAnimatorController.swift */,
 				261E673E230FAD8A00768B19 /* MapRouter.swift */,
 				267693E82313A6C0000ED7A1 /* MapInteractor.swift */,
+				265F7A6423262978006CE95E /* MapPresenter.swift */,
 			);
 			path = "Map Scene";
 			sourceTree = "<group>";
@@ -875,6 +878,7 @@
 				261ADD0C23177C470056D3DB /* SignupViewController.swift in Sources */,
 				2645BEDD2313F064002BA03A /* UserService.swift in Sources */,
 				261E673C230FAADF00768B19 /* MapDismissAnimatorController.swift in Sources */,
+				265F7A6523262978006CE95E /* MapPresenter.swift in Sources */,
 				2681F2FC230141390036E42A /* AddressModels.swift in Sources */,
 				26CBBDB022E7F92100CB27D1 /* UIExtensions.swift in Sources */,
 				2681F2F323013F1B0036E42A /* AddressViewController.swift in Sources */,

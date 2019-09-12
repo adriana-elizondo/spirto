@@ -16,6 +16,7 @@ struct MenuItem {
         var itemName: String
         var price: Float
         var imageUrl: String
+        var itemDescription: String
         var category: CategoryItem.Category
     }
     struct ViewModel {

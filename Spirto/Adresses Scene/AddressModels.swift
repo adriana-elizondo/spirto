@@ -14,7 +14,7 @@ struct Address: Codable {
     var latitude: Double
     var longitude: Double
     struct Response: Codable {
-        var success: Bool
+        var itemReturned: Address
     }
 }
 struct Addresses {
@@ -29,6 +29,10 @@ struct Addresses {
     }
 }
 extension Address {
+    var cityInitials: String {
+        guard city.count > 0 else { return "" }
+        return String(city.dropLast(city.count - 2))
+    }
     func getMapPlacemark() -> MKPlacemark? {
         return MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
     }

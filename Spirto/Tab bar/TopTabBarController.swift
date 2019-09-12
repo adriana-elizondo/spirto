@@ -60,6 +60,10 @@ class TopTabBar: UIView {
     }
     func selectItem(at index: Int) {
         guard items.count > index else { return }
+        for item in items {
+            item.unSelectedState()
+        }
+        
         items[index].selectedState()
         delegate?.didSelect(item: items[index])
     }

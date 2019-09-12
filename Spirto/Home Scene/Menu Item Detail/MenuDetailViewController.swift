@@ -27,6 +27,6 @@ class MenuDetailViewController: UIViewController {
             itemImage.setImage(from: url, with: nil)
         }
         itemTitle.text = item?.itemName
-        itemDescription.text = "This is a random description again"
+        itemDescription.text = item?.itemDescription
     }
 }

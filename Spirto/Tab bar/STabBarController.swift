@@ -12,8 +12,12 @@ import UIKit
 class STabBarItem: UIView, TopTabBarContainable {
     @IBOutlet weak var itemImageView: UIImageView!
     var viewcontroller: UIViewController?
-    func selectedState() {}
-    func unSelectedState() {}
+    func selectedState() {
+        itemImageView.alpha = 1.0
+    }
+    func unSelectedState() {
+        itemImageView.alpha = 0.5
+    }
 }
 
 class STabBarController: TopTabBarController {
@@ -40,12 +44,19 @@ class STabBarController: TopTabBarController {
             tabBar?.addNewItem(item: tabItem)
         }
         //profile
+        let profileNavigationController = UINavigationController()
+        profileNavigationController.navigationBar.barTintColor = UIColor.spirtoColor()
+        profileNavigationController.navigationBar.tintColor = UIColor.white
+        profileNavigationController.navigationBar.shadowImage = UIImage()
+        profileNavigationController.navigationBar.isTranslucent = false
+        UINavigationBar.appearance().titleTextAttributes = textAttributes
         let profileViewController = ProfileViewController(name: nil)
+        profileNavigationController.viewControllers = [profileViewController]
         if let tabItem = Bundle.main.loadNibNamed("TabBarItem", owner: nil, options: nil)?.first as? STabBarItem {
             tabItem.backgroundColor = UIColor.spirtoColor()
             tabItem.itemImageView.image = #imageLiteral(resourceName: "profile")
             tabItem.itemImageView.setImageColor(color: UIColor.white)
-            tabItem.viewcontroller = profileViewController
+            tabItem.viewcontroller = profileNavigationController
             tabBar?.addNewItem(item: tabItem)
         }
         tabBar?.backgroundColor = UIColor.spirtoColor()

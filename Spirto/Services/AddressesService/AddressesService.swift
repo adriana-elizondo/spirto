@@ -9,19 +9,18 @@
 import Foundation
 import NetworkLayer
 
-struct AddressesParameters: Codable {
-    var userId: String
-}
 class AddressesService: EndpointType {
-    var parameters: AddressesParameters?
+    var parameters: String?
     var path: String {
-        return "/addresses/"
+        return "/addressess"
     }
     var httpMethod: HttpMethod {return .get}
-    var task: HttpTask<AddressesParameters> {
-        return HttpTask.requestWithParameters(bodyParameters: nil, queryParameters: ["userId": parameters?.userId ?? 0])
+    var task: HttpTask<String> {
+        return HttpTask.requestWithParameters(bodyParameters: nil,
+                                              queryParameters: nil,
+                                              pathParameters: [parameters ?? ""])
     }
-    typealias ParameterType = AddressesParameters
+    typealias ParameterType = String
     func getAddresses(completion:
         @escaping (Addresses.Response?, NetworkResponseError?) -> Void) {
         let router = Router<AddressesService, Addresses.Response>()
@@ -32,20 +31,25 @@ class AddressesService: EndpointType {
         }
     }
 }
-struct AddressParameters: Codable {
+
+struct AddressPostParameters: Codable {
     var address: Address
+    var userEmail: String
 }
+
 class AddressService: EndpointType {
-    var parameters: AddressParameters?
+    var parameters: AddressPostParameters?
     var path: String {
-        return "/address/"
+        return "/address"
     }
     var httpMethod: HttpMethod {return .post}
-    var task: HttpTask<AddressParameters> {
-        return HttpTask.requestWithParameters(bodyParameters: parameters, queryParameters: nil)
+    var task: HttpTask<AddressPostParameters> {
+        return HttpTask.requestWithParameters(bodyParameters: parameters,
+                                              queryParameters: nil,
+                                              pathParameters: nil)
     }
-    typealias ParameterType = AddressParameters
-    func getAddresses(completion:
+    typealias ParameterType = AddressPostParameters
+    func createNewAddress(completion:
         @escaping (Address.Response?, NetworkResponseError?) -> Void) {
         let router = Router<AddressService, Address.Response>()
         router.request(with: self) { (response, _, error) in

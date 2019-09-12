@@ -9,14 +9,22 @@
 import Foundation
 
 protocol AddressBusinessLogic {
-    func getAddresses(for user: User)
-    func createNewAddress()
+    func getAddresses()
 }
 class AddressInteractor: AddressBusinessLogic {
     var presenter: AddressPresentingProtocol?
-    var worker: AddressAPIHandler?
-    func getAddresses(for user: User) {
-        worker?.loadAllItems(for: user, with: { (response) in })
+    private let worker = AddressWorker()
+    func getAddresses() {
+        if let user = UserManager.sharedInstance.getUser() {
+            worker.loadAllItems(for: user, with: { (response) in
+                switch response{
+                case .success(let response):
+                    self.presenter?.presentUserAddresses(with: response)
+                    break
+                case .failure(_):
+                    break
+                }
+            })
+        }
     }
-    func createNewAddress() {}
 }
